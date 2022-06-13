@@ -5,6 +5,10 @@
 {% block body %}
 <h1>{{ user.email }}</h1>
 
+{%for rating in user.ratings%}
+<li>{{rating.movie.title}}: {{rating.score}}</li>
+{%endfor%}
+
 <p>
   
 </p>
